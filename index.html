@@ -8,7 +8,26 @@
 </head>
 <body>
     <p>你好</p>
-    <p>你是个人渣</p>
-    <p>你真特么废物</p>
+    <p>世界</p>
+    <p>魅力的</p>
 </body>
+<script type="text/javascript">
+var a = {"login":"false"};
+JSON.stringify(a);
+console.log(typeof(a));
+var b = {"login":'12','login2':'45',"login3":'123','login23':'456','login34':''};
+
+var list = [];
+for(var i in b){
+    console.log(b[i])
+    console.log(i)
+    var obj ={}
+    if(b[i]){
+        obj.name = i;
+        obj.value =b[i];
+        list.push(obj);
+    }
+    console.log(list)
+}
+</script>
 </html>
